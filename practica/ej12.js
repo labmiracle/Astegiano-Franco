@@ -66,8 +66,6 @@ function guess(random_number, dif){
 
                 user_number = parseInt(prompt("Try again with a number between 0 and 10: "));
                 
-                if(validate(user_number)){
-                    count ++;}
             }
             if (user_number !== random_number){
                 result = false;
