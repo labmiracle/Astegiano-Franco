@@ -93,10 +93,17 @@ function guess(random_number, dif){
 
         case 1:
             
-            while(user_number !== random_number && validate(user_number)){
+            while(user_number !== random_number){
                 
-                recommed(random_number,user_number);
-                user_number = parseInt(prompt("New guess: "));
+                if(validate(user_number)){
+                    recommed(random_number,user_number);
+
+                } else{
+                    console.log("Number should be between 0 and 10.\n")
+                    
+                }
+                
+                user_number = parseInt(prompt("Try again: "));
                 
                 
             }
